@@ -2,8 +2,6 @@
 
 *Language*: Python3
 
-*Owner*: Alfie Ford (alfie-ford-ggs)
-
 *Status*: In Development
 
 ###Bugs###
