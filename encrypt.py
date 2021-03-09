@@ -11,7 +11,7 @@ symbet = '.,:/\!"£$%^&*()-+[]{}@#~?<>|¬`'
 otherbet = '@łe¶ŧ←↓→øþæßðđŋħĸł«»¢“”nµ'
 newMessage = ''
 #Main code here
-print("Crypta \nEncoding Software Loading... \n Version: 1.0")
+print("Crypta \nSoftware Loading... \n Version: 1.0")
 print("--------------------------------")
 sleep(0.5)
 message = input('Please enter a message: ') 
