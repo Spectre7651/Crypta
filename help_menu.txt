@@ -1,0 +1,16 @@
+**Crypta Help Menu V1.7**
+
+Parameters
+-e	Encrypt mode - will encrypt the supplied text and return it.
+-d	Decrypt mode - will take the text and decrypt it with the key supplied
+--help	Opens this help menu
+If no Parameters are given Crypta will default to the python cli view
+
+Example command
+ python3 crypta.py -e
+
+Devlopers
+
+The Crypta Group <ping.crypta@grantowngrammar.org.uk>
+
+If you find bugs in our code email us! <ping.crypta@grantowngrammar.org.uk>
