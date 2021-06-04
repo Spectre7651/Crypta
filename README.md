@@ -8,6 +8,7 @@ Feel free to push your improvements or recommendations to us here.
 $ python3 crypta.py
 ```
 Or see our wiki for other commands etc...
+
 *Language*: Python3
 
 *Status*: In Development
