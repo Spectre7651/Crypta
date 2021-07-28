@@ -11,6 +11,4 @@ Example command
 
 Devlopers
 
-The Crypta Group <ping.crypta@grantowngrammar.org.uk>
-
-If you find bugs in our code email us! <ping.crypta@grantowngrammar.org.uk>
+The Crypta Group
