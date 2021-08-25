@@ -173,7 +173,7 @@ try:
 except IndexError:
     print("No parameters found defaulted to cli view")
     print("-" * 20)
-    print("Crypta Command Line Interface Version 1.7")
+    print("Crypta Command Line Interface Version 2.0")
     cli = "run"
     while cli == "run":
         print("-"*20)
