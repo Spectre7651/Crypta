@@ -13,4 +13,3 @@ $ python3 crypta.py
 *Language*: Python3
 
 *Status*: In Development
-
