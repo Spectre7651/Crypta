@@ -1,14 +1,9 @@
-**Crypta Help Menu V1.7**
+**Crypta Help Menu V2.1**
 
 Parameters
 -e	Encrypt mode - will encrypt the supplied text and return it.
 -d	Decrypt mode - will take the text and decrypt it with the key supplied
---help	Opens this help menu
-If no Parameters are given Crypta will default to the python cli view
+-ef Encrpyt file
+-df Decrypt file
 
-Example command
- python3 crypta.py -e
-
-Devlopers
-
-The Crypta Group
+-ef open diffie hellman key gen sub function
