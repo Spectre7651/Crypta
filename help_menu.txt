@@ -1,9 +1,0 @@
-**Crypta Help Menu V2.1**
-
-Parameters
--e	Encrypt mode - will encrypt the supplied text and return it.
--d	Decrypt mode - will take the text and decrypt it with the key supplied
--ef Encrpyt file
--df Decrypt file
-
--ef open diffie hellman key gen sub function
