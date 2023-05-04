@@ -8,7 +8,6 @@ from CryptaImportVer import enc,dec
 
 
 #Functions/precedures
-
 #Output the results of string encrypt/decryption
 def outputdata(data,function):
     print("-"*20)

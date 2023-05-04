@@ -18,7 +18,7 @@ def enc(key,message):
     i = 0
     for character in message:
         i = i + 1
-        roundkey = int(randnums[((i+23)%len(randnums))])+ (key + int(randnums[(oldroundkey % len(randnums))])) # key for the round is generated
+        roundkey = int(groupkey[((i+23)%len(groupkey))])+ (key + int(groupkey[(oldroundkey % len(groupkey))])) # key for the round is generated
         oldroundkey = roundkey
         #print("RND: ",roundkey)
         if character in alphabet:
@@ -59,7 +59,7 @@ def dec(key,message):
     i = 0
     for character in message:
         i = i + 1
-        roundkey = int(randnums[((i+23)%len(randnums))])+ (key + int(randnums[(oldroundkey % len(randnums))])) # key for the round is generated
+        roundkey = int(groupkey[((i+23)%len(groupkey))])+ (key + int(groupkey[(oldroundkey % len(groupkey))])) # key for the round is generated
         oldroundkey = roundkey
         roundkey = "-" + str(roundkey)
         roundkey = int(roundkey)
@@ -99,16 +99,15 @@ def outputdata(data,function):
         print("Encrypted Message: {}".format(data))
     else:
         print("Plaintext Message: {}".format(data))
-#Global data
 global alphabet
 global capbet
 global numbet
 global symbet
-global randnums
+global groupkey
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 capbet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 numbet = '0123456789'
 symbet = '.,:/\!"£$%^&*()-+[]@#~?<>|¬`@łe¶ŧ←↓→øþæßðđŋħĸł«»¢“”nµ'
-randnumfile = open("randomnums.txt","r")
-randnums = randnumfile.read()
+groupkeyfile = open("groupkey.txt","r")
+groupkey = groupkeyfile.read()
 
