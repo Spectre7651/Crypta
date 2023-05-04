@@ -1,6 +1,7 @@
 
 #Import
-from CryptaImportVer import enc,dec
+from CryptaCipher import enc,dec
+
 
 def read_file(filename):
     f = open(filename,"r")

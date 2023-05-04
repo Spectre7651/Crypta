@@ -11,6 +11,12 @@
 #-------------------------------------------------------------
 #Encrypt Mode
 def enc(key,message):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    capbet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    numbet = '0123456789'
+    symbet = '.,:/\!"£$%^&*()-+[]@#~?<>|¬`@łe¶ŧ←↓→øþæßðđŋħĸł«»¢“”nµ'
+    groupkeyfile = open("groupkey.txt","r")
+    groupkey = groupkeyfile.read()
     key = int(key)
     messagelen = len(message)
     oldroundkey = 1
@@ -52,6 +58,12 @@ def enc(key,message):
 #------------------------------------------------------------
 #Decrypt Mode
 def dec(key,message):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    capbet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    numbet = '0123456789'
+    symbet = '.,:/\!"£$%^&*()-+[]@#~?<>|¬`@łe¶ŧ←↓→øþæßðđŋħĸł«»¢“”nµ'
+    groupkeyfile = open("groupkey.txt","r")
+    groupkey = groupkeyfile.read()
     key = int(key)
     messagelen = len(message)
     oldroundkey = 1

@@ -2,8 +2,8 @@
 
 
 #Imports
-from CryptaFileHandle import encryptfile, decryptfile
-from CryptaImportVer import enc,dec
+from CryptaFileHandling import encryptfile, decryptfile
+from CryptaCipher import enc,dec
 
 
 

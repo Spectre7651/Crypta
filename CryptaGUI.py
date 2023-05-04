@@ -5,12 +5,12 @@
 
 #Imports
 import tkinter as tk
-from CryptaImportVer import enc,dec
+from CryptaCipher import enc,dec
 
 #Setup Window
 window = tk.Tk()
-window.rowconfigure([0,1,2,3,4,5], minsize=10, weight=1)
-window.columnconfigure([0,1,2], minsize=25, weight=1)
+window.rowconfigure([0,1,2,3,4,5], minsize=0, weight=1)
+window.columnconfigure([0,1,2], minsize=10, weight=1)
 window.title("Crypta 3 - GUI")
 #Title
 greeting = tk.Label(text="-Crypta GUI-")
@@ -18,20 +18,20 @@ greeting.grid()
 
 #Key Input
 keylabel = tk.Label(text="Enter key (int):")
-keyentry = tk.Entry(fg="darkred",bg="white",width=50)
+keyentry = tk.Entry(fg="darkred",bg="white",width=25)
 keylabel.grid(row=2,column=0)
 keyentry.grid(row=2, column=2)
 
 #Message Input
 textlabel = tk.Label(text="Enter Text: ")
-textin = tk.Entry(fg="darkred",bg="white",width=50)
+textin = tk.Entry(fg="darkred",bg="white",width=25)
 textlabel.grid(row=3, column=0)
 textin.grid(row=3, column=2)
 
 #Action Button Setup
 ptbutton = tk.Button(
     text="Encrypt",
-    width=50,
+    width=25,
     height=5,
     bg="lightgrey",
     fg="black"
@@ -40,7 +40,7 @@ ptbutton.grid(row=4, column=0)
 
 decbutton = tk.Button(
     text="Decrypt",
-    width=50,
+    width=25,
     height=5,
     bg="lightgrey",
     fg="black"
@@ -84,6 +84,5 @@ def decbuttonf(event):
 ptbutton.bind("<Button-1>", encbuttonf)
 decbutton.bind("<Button-1>",decbuttonf)
 
-while True:
-    #Mainloop
-    window.mainloop()
+#Mainloop
+window.mainloop()
